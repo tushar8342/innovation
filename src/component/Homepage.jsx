@@ -12,13 +12,13 @@ export default function Homepage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:8080/food").then((res) => {
+    axios.get("https://tushar8342.github.io/jsonserver/db.json").then((res) => {
       setFooddata(res.data) 
     })
   }, [])
 
   return (
-    
+
     <div>
       <div className='header'>
 

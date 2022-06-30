@@ -10,7 +10,7 @@ function Details() {
   const [data, setData] = useState({});
   // console.log(data)
   useEffect(() => {
-    axios.get(`http://localhost:8080/food?code=${code}`).then(res => setData(res.data[0]))
+    axios.get(`https://tushar8342.github.io/jsonserver/db.json?code=${code}`).then(res => setData(res.data[0]))
     
   }, [])
   
