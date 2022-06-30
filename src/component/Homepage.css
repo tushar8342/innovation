@@ -1,0 +1,66 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    background-color: rgb(165, 205, 142);
+}
+.icons{
+    display: flex;
+    margin-top: 1.7%;
+    margin-right: 1%;
+}
+.proodetails{
+    width: 97%;
+    margin: auto;
+}
+.search{
+    margin-right: 3%;
+}
+.lists{
+    display: flex;
+}
+.lists > div{
+    width: 50%;
+    height: 22px;
+    border: 1px solid rgb(124, 155, 107);
+    text-align: center;
+}
+.rit{
+    background-color: rgb(187, 238, 157);
+}
+.hrstyle{
+    width: 40%;
+    
+}
+
+.iconimg{
+    height: 80px;
+    width: 80px;
+}
+
+.mapping{
+    display: flex;
+    margin-top: 13px;
+    
+}
+.uline{
+    margin-left: 10px;
+}
+
+  @media only screen and (min-width: 0px) and (max-width:376px){
+    .icons{     
+        margin-top: 6%;    
+    }
+    .mapping{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width:768px){
+    .icons{
+        margin-top: 5%;   
+    }
+     .mapping{
+        display: flex;
+    } 
+}

@@ -1,0 +1,48 @@
+.head{
+    height: 130px;
+    width: 100%;
+    background-color: rgb(165, 205, 142);
+    display: flex;
+}
+
+.proddetails{
+    width: 95%;
+    margin: auto;
+}
+
+.iconimgg{
+    height: 80px;
+    width: 80px;
+}
+
+.prod_name{
+    display: flex;
+    margin-top: 13px;
+}
+.prodalign{
+    margin-left: 10px;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin-top: 13px;
+    border-color: #0ddddd;
+  }
+
+@media only screen and (min-width: 0px) and (max-width:376px){
+    .prod_name{
+        display: flex;
+        margin-top: 13px;
+    }
+    .proddetails{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width:768px){
+    .prod_name{
+        display: flex;
+        margin-top: 13px;
+    }
+}
