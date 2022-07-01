@@ -8,11 +8,18 @@ function Details() {
   const { code } = useParams();
 
   const [data, setData] = useState({});
-  // console.log(data)
+
+  console.log(data)
   useEffect(() => {
-    axios.get(`https://tushar8342.github.io/jsonserver/db.json?code=${code}`).then(res => setData(res.data[0]))
-    
+    axios.get(`https://tushar8342.github.io/jsonserver/db.json`).then((res) => {
+      console.log(res.data)
+        
+      let findcode = res.data.filter((el) => el.code == code)
+      console.log(findcode)
+      setData(findcode[0]);
+    })
   }, [])
+
   
 return (
   <div>      
